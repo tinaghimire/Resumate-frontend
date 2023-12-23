@@ -4,7 +4,7 @@ Optical Character Recognition (OCR) is used to convert images, pdf files to read
 
 ## OCR pipeline
 
-![OCR pipeline](../images/pipeline.png)
+![OCR pipeline](/OCR/images/pipeline.png)
 [Image Source](https://theailearner.com/2019/05/28/optical-character-recognition-pipeline/)
 
 ### 1. Image preprocessing
