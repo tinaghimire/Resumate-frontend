@@ -1,0 +1,6 @@
+numpy
+pandas
+spacy
+nltk
+pyresparser
+tika
