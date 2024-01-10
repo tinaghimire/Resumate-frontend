@@ -16,7 +16,7 @@ deactivate
 
 ### Add all python libraries in one file
 
-[requirements.txt]("..\Research\requirements.txt")
+[requirements.txt]("C:\Users\ghimi\OneDrive\Documents\Github\Project\Research\requirements.txt")
 
 ### Install all packages listed in requirements.txt file
 
