@@ -16,7 +16,7 @@ deactivate
 
 ### Add all python libraries in one file
 
-[requirements.txt]("..\requirements.txt")
+[requirements.txt]("..\Research\requirements.txt")
 
 ### Install all packages listed in requirements.txt file
 
