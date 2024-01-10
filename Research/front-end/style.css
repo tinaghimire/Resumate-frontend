@@ -1,28 +1,32 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
 * {
-    margin: 0;
+    margin: auto;
     padding-left: 10px;
     box-sizing: border-box;
+    
 }
 
 main{
     padding: 10px;
-    margin: 10px;
     background-color: lightblue;
 }
 
 header{
     display: grid;
     background-color: white;
+    /* border: 1px solid black; */
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
+    padding: auto;
     width: auto;
-    height: auto;
-    font-size: 20px;
-    
-
+    height: 100px;
+    font-size: 40px;
+    color: black;
 }
 
 .logo{
@@ -57,6 +61,11 @@ header{
     border-radius: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -66,31 +75,32 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration:  orange underline 3px;
 }
 
 a:active {
     text-decoration: none;
 }
 
+h1{
+    font-size: 40px;
+    margin: 20px;
+}
+
 p{
     font-size: 20px;
-    padding: 10px;
-    margin: 10px;
+    margin: 20px;
     width: 500px;
 }
 
 #main{
-    display: grid;
-    direction: column;
-    justify-content: space-between;
     background-color: blue;
     color: white;
     border-radius: 10px;
-    border-color: none;
+    border: none;
     padding: 10px;
     margin: 10px;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .remainder{
@@ -99,10 +109,29 @@ p{
     border-radius: 10px;
     border-color: none;
     padding: 1px;
-    margin: 1px;
+    margin: 20px;
     font-size: 10px;
-    width: 250px;
+    width: 260px;
     height: 50px;
     line-height: 10px;
 }
 
+footer{
+    display: grid;
+    background-color: black;
+    /* border: 1px solid black; */
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: auto;
+    width: auto;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+
+}
+
+footer a{
+    color: white;
+    font-size: 15px;
+}
