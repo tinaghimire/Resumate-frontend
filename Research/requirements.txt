@@ -1,0 +1,7 @@
+numpy
+pandas
+gensim
+nltk
+spacy
+tika
+pyresparser
