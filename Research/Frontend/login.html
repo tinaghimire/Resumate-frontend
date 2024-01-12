@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
+    <link rel="stylesheet" href="./Assets/Styles/login-style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <!-- <div class="logo"><img src="logo.png" alt="logo"></div> -->
+        <div class="logo"><span id="blue">Resu</span><span id="orange">Mate</span></div>
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <button class="login">Login</button>
+    </header>
+    <div class="logIn">
+        <form class="login-form" method="post">
+            <h1 style="padding-bottom: 30px;">Login</h1>
+            <div class="username">
+                <label for="Username">Username</label>
+                <input type="text" name="Username" placeholder="Enter username" autocomplete="on" required>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="Password" placeholder="Enter password" required>
+            </div>
+            <div style="padding: 10px;" class="remember-forgot">
+                <label><input " type="checkbox">Remember me</label> 
+                <a href="#">Forgot password?</a>
+            </div>
+            <button style="margin: 40px 0 10px 0;" type="submit" class="submit">Login</button>   
+            
+            <div class="signupLink">
+                Don't have an account?  <a style="padding-left: 10px;" href="signup.html">Signup</a>
+            </div>
+        </form> 
+        <img src="./Assets/_Images/signup-login.jpg" class="photo">
+    </div>
+    <footer>
+        <div class="home-page">
+            <h3>ResuMate</h3>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <div id="quick-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div id="follow-us">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

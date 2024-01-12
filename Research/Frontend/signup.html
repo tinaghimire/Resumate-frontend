@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
+    <link rel="stylesheet" href="./Assets/Styles/signup-style.css">
+    <title>Signup</title>
+</head>
+<body>
+    <header>
+        <!-- <div class="logo"><img src="logo.png" alt="logo"></div> -->
+        <div class="logo"><span id="blue">Resu</span><span id="orange">Mate</span></div>
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <button class="login">Login</button>
+    </header>  
+    <div class="signUp">
+        <form class="signup-form" method="post">
+            <h1 style="padding-bottom: 30px;">Sign Up</h1>
+            <div class="username">
+                <label for="Username">Username</label>
+                <input type="text" name="Username" id="Username" placeholder="Enter username" autocomplete="on" required>
+            </div>
+            <div class="email">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="xyz@gmail.com" autocomplete="on" required>
+            </div>
+            <div class="password">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" placeholder="Enter password" required>
+            </div>
+            <div class="confirmPassword">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter password again" required>
+            </div>
+            <button style="margin: 40px 0 10px 0;" type="submit" class="submit">Register</button>   
+            <div class="loginLink">
+                Already have an account? <a style="padding-left: 10px;" href="login.html">Login</a>
+            </div>
+        </form>
+        <img src="./Assets/_Images/signup-login.jpg" class="photo">
+    </div>
+    <footer>
+        <div class="home-page">
+            <h3>ResuMate</h3>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <div id="quick-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div id="follow-us">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
