@@ -1,6 +1,5 @@
 body {
     display: grid;
-    grid-template-rows: 0.75fr 4fr 3fr 3fr 0.5fr;
 }
 
 main{
@@ -9,20 +8,8 @@ main{
     justify-content: space-between;
     align-items: self-start;
     padding: 50px;
-    background-color: lightblue;
+    background-color: #D7EEFF;
 }
-
-.submit{
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    width: 40%;
-    margin-top: 20px;
-    padding: 10px 20px 10px 20px;
-    font-size: 18px;
-}
-
 
 .remainder{
     background-color: orange;
@@ -64,11 +51,11 @@ main{
 }
 
 #sec1{
-    background-color: lightcyan;
+    background-color: #FFF8EC;
 }
 
 #sec2{
-    background-color: lightgoldenrodyellow;
+    background-color: #E9F6FF;
 }
 
 .services, .feedbacks{

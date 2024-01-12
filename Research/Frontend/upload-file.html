@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header_footer.css">
-    <link rel="stylesheet" href="file_upload.css">
+    <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
+    <link rel="stylesheet" href="./Assets/Styles/file-upload.css">
 </head>
 <body>
     <header>
@@ -17,10 +17,10 @@
             <a href="#">Contact Us</a>
         </div>
         <button class="login">Login</button>
-    </header>
-    <main>
+    </header>  
+    <section>
         <div class="upload">
-            <h1 style="margin-bottom: 20px; text-align: start; padding-left: 20px;">Data Collection</h1>
+            <h1 style="margin: 60px 0 10px 0; text-align: start; padding-left: 20px;">Data Collection</h1>
             <div class="job">
                 <h2 style="margin-bottom: 20px;">Job Description</h2>
                 <!-- <form action="upload.php" method="post" enctype="multipart/form-data"> -->
@@ -29,8 +29,8 @@
                 </form>
                 <div class="slider">
                     <h3 style="margin-top: 20px;">Priority order:</h3>
-                    <div style="display: flex; align-items: center; flex-basis: 40%;">
-                        <select name="Priority" id="priority">
+                    <div class="prio" style="display: flex; align-items: center; flex-basis: 5cm;">
+                        <select name="Priority" class="priority">
                             <option value="Skills">Skills</option>
                             <option value="Education">Education</option>
                             <option value="Age">Age</option>
@@ -40,7 +40,7 @@
                         <output style="margin-left: 5px;padding: 5px; background-color: lightblue;">20</output>
                     </div>
                     <div style="display: flex; height: 30px; align-items: center; flex-basis: 40%;">
-                        <select name="Priority" id="priority">
+                        <select name="Priority" class="priority">
                             <option value="Skills">Skills</option>
                             <option value="Education">Education</option>
                             <option value="Age">Age</option>
@@ -50,7 +50,7 @@
                         <output style="margin-left: 5px;padding: 5px; background-color: lightblue;">20</output>
                         <output></output>
                     </div>
-                    <button  class="submit">Add more</button>
+                    <button  class="submit add-more">Add more</button>
                 </div>
             </div>
             <div class="resume">
@@ -66,14 +66,14 @@
             <button class="submit">Submit</button>
         </div>
         <div class="sample">
-            <iframe allowtransparency="true"  id="text" src="./materials/sample.txt"></a>
+            <iframe allowtransparency="true"  id="text" src="./Assets/Files/sample.txt"></a>
         </div>
-    </main>
+    </section>
     <footer>
-        <div class="footer-text">
+        <div class="home-page">
             <h3>ResuMate</h3>
         </div>
-        <div class="footer-text">
+        <div>
             <h3>Quick Links</h3>
             <div id="quick-links">
                 <a href="#">Home</a>
@@ -81,7 +81,7 @@
                 <a href="#">Contact Us</a>
             </div>
         </div>
-        <div class="footer-text">
+        <div>
             <h3>Follow Us</h3>
             <div id="follow-us">
                 <a href="#">Facebook</a>
