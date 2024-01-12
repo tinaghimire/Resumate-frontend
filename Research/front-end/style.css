@@ -1,91 +1,6 @@
-* {
-    margin:0;
-    padding:0;    
-    box-sizing: border-box;
-}
-
 body {
     display: grid;
     grid-template-rows: 0.75fr 4fr 3fr 3fr 0.5fr;
-}
-
-header{
-    display: flex;
-    background-color: white;
-    /* border: 1px solid black; */
-    /* grid-template-columns: 1fr 2fr 1fr; */
-    justify-content: space-evenly;
-    align-items: center;
-    width: auto;
-    margin: auto 10px auto 10px;
-    height: 60px;
-    font-size: 20px;
-    color: black;
-    font-weight: medium;
-}
-
-.logo{
-    width: 60px;
-    height: 60px;
-    text-align: left;
-    line-height: 60px;
-    font-size: 40px;
-    font-weight: bold;
-    /* Flex-basis - defines spaces */
-    flex-basis: 20%;  
-}
-
-#orange{
-    color: orange;
-}
-
-#blue{
-    color: blue;
-}
-
-.nav-bar{
-    display: flex;
-    flex-basis: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.login{
-    padding: 10px 5px 10px 5px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: medium;
-    background-color: lightblue;
-    border-radius: 10px;
-    flex-grow: 0.25;
-    border: none;
-}
-
-/* A normal, unvisited link */
-a:link {
-    text-decoration: none;
-}
-
-/* a link the user has visited */
-a:visited {
-    text-decoration: none;
-}
-
-.login:hover{
-    background-color: orange;
-}
-
-/* a link when the user mouses over it */
-a:not(.login):hover{
-    text-decoration:  none;
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-/* a link the moment it is clicked */
-a:active {
-    text-decoration: none;
 }
 
 main{
@@ -97,18 +12,7 @@ main{
     background-color: lightblue;
 }
 
-h1{
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-p{
-    font-size: 20px;
-    margin-top: 10px;
-    width: 500px;
-}
-
-#main{
+.submit{
     background-color: blue;
     color: white;
     border-radius: 10px;
@@ -129,29 +33,7 @@ p{
     margin-top: 20px;
     font-size: 20px;
     padding: 10px 30px 10px 30px;
-
     width: 250px;
-}
-
-footer{
-    display: grid;
-    background-color: black;
-    /* border: 1px solid black; */
-    grid-template-columns: 1fr 2fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    width: auto;
-    height: 100px;
-    font-size: 20px;
-    color: white;
-
-}
-
-footer a, footer-text{
-    color: white;
-    font-size: 15px;
-    flex-basis: 90%;
 }
 
 .grid{
@@ -171,14 +53,6 @@ footer a, footer-text{
     margin-right: 0;
     justify-self: center;
     /* Flex-basis - defines spaces */
-}
-
-#quick-links, #follow-us{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    padding: auto;
 }
 
 #grid{
