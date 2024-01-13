@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>File Upload</title>
     <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
     <link rel="stylesheet" href="./Assets/Styles/file-upload.css">
 </head>
@@ -18,9 +18,8 @@
         </div>
         <button class="login">Login</button>
     </header>  
-    <section>
+    <div class="main">
         <div class="upload">
-            <h1 style="margin: 60px 0 10px 0; text-align: start; padding-left: 20px;">Data Collection</h1>
             <div class="job">
                 <h2 style="margin-bottom: 20px;">Job Description</h2>
                 <!-- <form action="upload.php" method="post" enctype="multipart/form-data"> -->
@@ -66,9 +65,12 @@
             <button class="submit">Submit</button>
         </div>
         <div class="sample">
-            <iframe allowtransparency="true"  id="text" src="./Assets/Files/sample.txt"></a>
+            <iframe id="text" src="./Assets/Files/sample.txt"></iframe>
         </div>
-    </section>
+        <!-- <div class="sample">
+            <embed src="./Assets/Files/sample.txt" type="">
+        </div> -->
+    </div>
     <footer>
         <div class="home-page">
             <h3>ResuMate</h3>
