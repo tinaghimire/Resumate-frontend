@@ -6,17 +6,12 @@
 } */
 
 body{
-    margin: 0;
     padding: 0;
-    margin-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
 }
 
-section{
+.main{
     display: flex;
-    flex:1;
     flex-direction: row;
     background-color: #D7EEFF;
     flex-direction: row;
@@ -56,6 +51,7 @@ iframe{
     border: none;
     color: black;
     margin-right: 50px;
+    display: block;
 }
 
 .job, .resume{
