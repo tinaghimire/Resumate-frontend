@@ -5,9 +5,16 @@
     margin-bottom: 200px;
 } */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     padding: 0;
     margin: 0;
+    background-color: #D7EEFF;
 }
 
 .main{
@@ -16,6 +23,7 @@ body{
     background-color: #D7EEFF;
     flex-direction: row;
     padding: 50px 10px 50px 10px;
+    align-items: center;
 }
 
 /* Grid */
@@ -47,7 +55,7 @@ body{
 
 iframe{
     width: 600px;
-    height: 500px;
+    height: 590px;
     border: none;
     color: black;
     margin-right: 50px;
@@ -65,3 +73,6 @@ iframe{
 
 }
 
+.prio{
+    padding-top : 10px;
+}

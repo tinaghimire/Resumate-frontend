@@ -26,30 +26,31 @@
                 <form action="">
                     <input type="file" id="myfile1" name="myfile" >
                 </form>
-                <div class="slider">
+                <div class="slider-container">
                     <h3 style="margin-top: 20px;">Priority order:</h3>
-                    <div class="prio" style="display: flex; align-items: center; flex-basis: 5cm;">
-                        <select name="Priority" class="priority">
-                            <option value="Skills">Skills</option>
-                            <option value="Education">Education</option>
-                            <option value="Age">Age</option>
-                            <option value="Experience">Experience</option>
-                        </select>
-                        <input type="range" min="1" max="100" value="20" class="slider" style="margin-bottom: 20px;"><br>
-                        <output style="margin-left: 5px;padding: 5px; background-color: lightblue;">20</output>
+                    <div class="prio">
+                        <label for="skills">Skills:</label>
+                        <input type="range" id="skills" min="0" max="100" value="20">
+                        <output>20</output>
                     </div>
-                    <div style="display: flex; height: 30px; align-items: center; flex-basis: 40%;">
-                        <select name="Priority" class="priority">
-                            <option value="Skills">Skills</option>
-                            <option value="Education">Education</option>
-                            <option value="Age">Age</option>
-                            <option value="Experience">Experience</option>
-                        </select>
-                        <input type="range" min="1" max="100" value="20"  class="slider" style="margin-bottom: 20px;"><br>
-                        <output style="margin-left: 5px;padding: 5px; background-color: lightblue;">20</output>
-                        <output></output>
+                    
+                    <div class="prio">
+                        <label for="education">Education:</label>
+                        <input type="range" id="education" min="0" max="100" value="20">
+                        <output>20</output>
                     </div>
-                    <button  class="submit add-more">Add more</button>
+                    
+                    <div class="prio">
+                        <label for="age">Age:</label>
+                        <input type="range" id="age" min="0" max="100" value="20">
+                        <output>20</output>
+                    </div>
+                    
+                    <div class="prio">
+                        <label for="experience">Experience:</label>
+                        <input type="range" id="experience" min="0" max="100" value="20">
+                        <output>20</output>
+                    </div>
                 </div>
             </div>
             <div class="resume">
@@ -65,7 +66,7 @@
             <button class="submit">Submit</button>
         </div>
         <div class="sample">
-            <iframe id="text" src="./Assets/Files/sample.txt"></iframe>
+            <iframe id="text" src="./Assets/Files/jobDescription.txt"></iframe>
         </div>
         <!-- <div class="sample">
             <embed src="./Assets/Files/sample.txt" type="">
