@@ -6,6 +6,7 @@
     <title>File Upload</title>
     <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
     <link rel="stylesheet" href="./Assets/Styles/file-upload.css">
+    <script src="./Assets/Scripts/file-upload.js"></script>
 </head>
 <body>
     <header>
@@ -28,36 +29,48 @@
                 </form>
                 <div class="slider-container">
                     <h3 style="margin-top: 20px;">Priority order:</h3>
+
                     <div class="prio">
                         <label for="skills">Skills:</label>
-                        <input type="range" id="skills" min="0" max="100" value="20">
-                        <output>20</output>
+                        <div class="sliderValue">
+                            <input type="range" class="slider" id="skills" min="0" max="100" value="20">
+                            <div class="value">20</div>
+                        </div>
                     </div>
                     
                     <div class="prio">
                         <label for="education">Education:</label>
-                        <input type="range" id="education" min="0" max="100" value="20">
-                        <output>20</output>
+                        <div class="sliderValue">
+                            <input type="range" class="slider" id="education" min="0" max="100" value="20">
+                            <div class="value">20</div>
+                        </div>
                     </div>
                     
                     <div class="prio">
                         <label for="age">Age:</label>
-                        <input type="range" id="age" min="0" max="100" value="20">
-                        <output>20</output>
+                        <div class="sliderValue">
+                            <input type="range" class="slider" id="age" min="0" max="100" value="20">
+                            <div class="value">20</div>
+                        </div>
                     </div>
                     
                     <div class="prio">
                         <label for="experience">Experience:</label>
-                        <input type="range" id="experience" min="0" max="100" value="20">
-                        <output>20</output>
+                        <div class="sliderValue">
+                            <input type="range" class="slider" id="experience" min="0" max="100" value="20">
+                            <div class="value">20</div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
             <div class="resume">
                 <h2 style="margin-bottom: 20px;">Resumes</h2>
                 <form action="">
                     <input type="file" id="myfile2" name="myfile" multiple>
                 </form>
+
                 <div class="skill">
                     <h3 style="margin-top: 20px;">Shortlist:</h3>
                     <input type="number" class="number" min="1" max="20">
@@ -65,6 +78,7 @@
             </div>
             <button class="submit">Submit</button>
         </div>
+
         <div class="sample">
             <iframe id="text" src="./Assets/Files/jobDescription.txt"></iframe>
         </div>
@@ -72,6 +86,7 @@
             <embed src="./Assets/Files/sample.txt" type="">
         </div> -->
     </div>
+    
     <footer>
         <div class="home-page">
             <h3>ResuMate</h3>
