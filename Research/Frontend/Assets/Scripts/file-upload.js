@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
             values[index].textContent = this.value;
 
             // Prevent the user from sliding the sliders beyond their updated maximum values
-            // if (parseInt(this.value) > remainingMax) {
-            //     this.value = remainingMax;
-            //     values[index].textContent = remainingMax;
-            // }
+            if (parseInt(this.value) > remainingMax) {
+                this.value = remainingMax;
+                values[index].textContent = remainingMax;
+            }
 
             if (currentSum === 100) {
                 submitButton.disabled = false;
