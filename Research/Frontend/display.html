@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
-    <link rel="stylesheet" href="./Assets/Styles/table-piechart.css">
-    <!-- <link rel="stylesheet" href="./Assets/Styles/piechart.css"> -->
+    <link rel="stylesheet" href="./Assets/Styles/table.css">
     <title>Display</title>
 </head>
 <body>
@@ -20,44 +19,69 @@
         <button class="login">Login</button>
     </header>  
     <main>
-
-        <div class="companyDetails">
-            <h1>Company</h1>
-            <div class="companyName">Company Name: </div>
-            <div class="companyLocation">Company Location: </div>
-            <div class="jobTitle">Job Title: </div>
-            <div class="typeOfJob">Type of Job: </div>
-            <div class="education">Education: </div>
-            <div class="skills">Skills: </div>
-            <div class="responsibilities">Responsibilities: </div>
-            <div class="language">Language: English, Nepali</div>
-            <div class="salary">Salary: 50k</div>
-            
-            
-
+        <div class="Jd"><h1>Job Title: {{JD.Job_title}}</h1>
+            <h2>Company Details</h2>
+            <div class ="row">
+                <div class="row1">
+                    <div class="companyName">Company Name: {{JD.companyName}}</div>
+                    <div class="companyLocation">Company Location: {{JD.companyLocation}}</div>
+                    <div class="category">Job Title: {{JD.category}}</div>
+                </div>
+                <div class="row2">
+                    <div class="typeOfJob">Type of Job: {{JD.typeOfJob}}</div>
+                    <div class="salary">Salary: {{JD.salary}}</div>
+                    <div class="levels">Levels: {{JD.kevels}}</div> 
+                </div>
+            </div>
+            <div class="language">Language: {{JD.language}}</div>
+            <div class="education">Education: {{JD.education}}</div>
+            <div class="skills">Skills: {{JD.skills}}</div>
+            <div class="experience">Experience: {{JD.experience}}</div>
+            <div class="responsibilities">Responsibilities: {{JD.responsibilities}}</div>
+            <!-- <div class="gender">Gender: {{JD.gender}}</div> -->
         </div>
-        
-        <div class="table">
-            <h1>Table</h1>
+        <div class="Ranked list">
+            <h2>Table</h2>
             <table >
                 <tr>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Location</th>
-                    <th>Degree</th>	
-                    <th>Certification</th>
+                    <th>Email Address</th>
+                    <th>Location</th>	
+                    <th>LinkedIn Link</th>
+                    <th>Companies Worked At</th>
+                    <th>Worked As</th>
+                    <th>Year of Experience</th>
+                    <!-- <th>University</th> -->
+                    <!-- <th>College Name</th> -->
+                    <th>Degree</th>
+                    <th>Year of Graduation</th>
+                    <th>Language</th>	
                     <th>Skills</th>
-                    <th>Awards</th>
-                    <th>Experience</th>
+                    <!-- <th>Certification</th> -->
+                    <!-- <th>Awards</th> -->
                 </tr>
-                <tbody id="myTable"></tbody>
+                {% for resume in resumes %}
+                <tbody id="myTable">
+                    <tr>
+                        <td>{{resume. name}}</td>
+                        <td>{{resume. email}}</td>
+                        <td>{{resume. location}}</td>
+                        <td>{{resume. linkedin}}</td>
+                        <td>{{resume. companies Worked As}}</td>
+                        <td>{{resume. worked As}}</td>
+                        <td>{{resume. year Of Experience}}</td>
+                        <!-- <td>{{resume.university}}</td> -->
+                        <!-- <td>{{resume.collegeName}}</td> -->
+                        <td>{{resume. degree}}</td>
+                        <td>{{resume. year Of Graduation}}</td>
+                        <td>{{resume. language}}</td>
+                        <td>{{resume. skills}}</td>
+                        <!-- <td>{{resume.certification}}</td> -->
+                        <!-- <td>{{resume.awards}}</td> -->
+                    </tr>
+                {% endfor %}
+                </tbody>
             </table>
-        </div>
-        <div class="piechart">
-            <h1>Pie Chart</h1>
-            <div>
-                <canvas id="pieChart"></canvas>
-            </div>
         </div>
     </main>
     <footer>
@@ -81,8 +105,5 @@
             </div>
         </div>
     </footer>
-    <script src="./Assets/Scripts/table.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./Assets/Scripts/piechart.js"></script>
 </body>
 </html>
