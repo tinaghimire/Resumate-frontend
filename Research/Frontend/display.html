@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Styles/header-footer.css">
+    <link rel="stylesheet" href="./Assets/Styles/table-piechart.css">
+    <!-- <link rel="stylesheet" href="./Assets/Styles/piechart.css"> -->
+    <title>Display</title>
+</head>
+<body>
+    <header>
+        <!-- <div class="logo"><img src="logo.png" alt="logo"></div> -->
+        <div class="logo"><span id="blue">Resu</span><span id="orange">Mate</span></div>
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <button class="login">Login</button>
+    </header>  
+    <main>
+
+        <div class="companyDetails">
+            <h1>Company</h1>
+            <div class="companyName">Company Name: </div>
+            <div class="companyLocation">Company Location: </div>
+            <div class="jobTitle">Job Title: </div>
+            <div class="typeOfJob">Type of Job: </div>
+            <div class="education">Education: </div>
+            <div class="skills">Skills: </div>
+            <div class="responsibilities">Responsibilities: </div>
+            <div class="language">Language: English, Nepali</div>
+            <div class="salary">Salary: 50k</div>
+            
+            
+
+        </div>
+        
+        <div class="table">
+            <h1>Table</h1>
+            <table >
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                    <th>Degree</th>	
+                    <th>Certification</th>
+                    <th>Skills</th>
+                    <th>Awards</th>
+                    <th>Experience</th>
+                </tr>
+                <tbody id="myTable"></tbody>
+            </table>
+        </div>
+        <div class="piechart">
+            <h1>Pie Chart</h1>
+            <div>
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="home-page">
+            <h3>ResuMate</h3>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <div id="quick-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div id="follow-us">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./Assets/Scripts/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./Assets/Scripts/piechart.js"></script>
+</body>
+</html>
