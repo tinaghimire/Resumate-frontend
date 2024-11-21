@@ -2,8 +2,6 @@
 
 1. Create a Virtual environment
 
-# Process
-
 ## Virtual environment and install packages
 
 ### Create a virtual environment to work in windows
